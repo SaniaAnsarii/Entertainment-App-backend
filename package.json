@@ -13,7 +13,7 @@
     "Express",
     "Mongodb"
   ],
-  "author": "Anurag Affection, Shanu Sarkar",
+  "author": "Sania Naz Ansari",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.6.8",

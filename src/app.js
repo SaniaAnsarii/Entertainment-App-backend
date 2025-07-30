@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(cors({
-    origin: [process.env.FRONTEND_URL],
+    origin: 'https://entertainmentapp-frontend.vercel.app',
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }))

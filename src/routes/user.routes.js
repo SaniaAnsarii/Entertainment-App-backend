@@ -9,7 +9,8 @@ const userRouter = express.Router();
 userRouter.post('/user/register', userRegister);
 userRouter.post('/user/login', userLogin);
 userRouter.get('/user/logout', userLogout);
-userRouter.get('/user/profile', isAuthenticated, userProfile);
+// Use /user/me for current user profile (RESTful convention)
+userRouter.get('/user/me', isAuthenticated, userProfile);
 userRouter.get('/user/:id', isAuthenticated, getUserById)
 
 // exporting 
